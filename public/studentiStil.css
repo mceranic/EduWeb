@@ -1,0 +1,164 @@
+body {
+	background: #60664e;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+	position: relative;
+	width:100%;
+	margin:0 auto;
+}
+#greska {
+	font-size: 16px;
+	padding: 5px;
+	color: red;
+}
+#header{
+    text-align: right;
+	padding-top:10px;
+}
+#header h1{
+        float:right;
+        margin: 0;
+        margin-top: 2.5%;
+		margin-right: 3%;
+		color: white;
+    }
+#logo {
+	width: 80px;
+	height: 80px;
+	left: 0;
+	padding-top: 15px;
+	padding-left:15px;
+	position: absolute;
+}
+#meni ul li {
+    display: inline;  
+}
+#meni {
+	padding-top: 90px;
+	margin-left: -1%;
+}
+#meni a {
+  font-size: 20px;
+  color: #c4cfab;
+  text-decoration:none;   
+  padding:15px;
+}
+#meni li a:hover {
+  color:white;
+}
+#meni_lista {
+	text-align:left;
+}
+#sredina{
+    margin:0;
+	min-height: 540px;
+}
+#side{
+	background-color:#ece7c5;
+	width:35%;
+	float:left; 
+	min-height:540px;
+}
+#side p {
+	text-align: center;
+	font-size: 20px;
+	padding: 15px;
+}
+#side ul {
+	border: 1px solid black;	
+	list-style-type: none;
+	background-color:white;
+	overflow-y:scroll;
+	width: 30%;
+	height: 300px;
+	padding: 10px;
+	margin-left: 25%;
+	font-size: 18px;
+}
+#glavniSadrzaj{
+	background-color: #eee0b1;
+	width:65%;
+	float:left;
+	min-height:540px;
+}
+#tabela {
+	margin: 0;
+}
+#tabela {
+	padding: 30px;
+}
+#tabela a {
+	text-decoration:none;
+}
+#glavniSadrzaj table {
+	width: 80%;
+}
+#glavniSadrzaj th {
+	text-align: left;
+	background-color:#c3b491;
+}
+#glavniSadrzaj table, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+#glavniSadrzaj th, td {
+	padding: 7px;
+}
+#footer {
+	margin: 0;
+	background-color:#60664e;
+	overflow: hidden;
+	font-size: 16px;
+	clear: both;
+	max-height: 48px;
+}
+#footer p{
+	margin-left: 15px;
+	color: white;
+}
+@media only screen and (max-width:600px) {
+  #header {
+	  padding-bottom: 110px;
+  }
+  #header h1 {
+	  position: relative;
+	  float: left;
+	  left: 40px;
+	  top: 400px;
+  }
+  #meni ul li{
+	  display:block; 
+	  padding-top:10px;
+}
+	#side {
+		width:100%;
+		height:auto;
+	}
+    #glavniSadrzaj {
+		width:100%;
+		height:auto;
+	}
+}
+@media only screen and (max-device-width:600px) {
+  #header {
+	  padding-bottom: 110px;
+  }
+  #header h1 {
+	  position: relative;
+	  float: left;
+	  left: 40px;
+	  top: 400px;
+  }
+  #meni ul li{	  
+	  display:block; 
+	  padding-top:10px;
+}
+	#side {
+		width:100%;
+		height:auto;
+	}
+    #glavniSadrzaj {
+		width:100%;
+		height:auto;
+	}
+}

@@ -1,0 +1,185 @@
+body {
+	background: #60664e;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+	position: relative;
+	width:100%;
+	margin:0 auto;
+}
+
+#header{
+    text-align: right;
+	padding-top:10px;
+}
+#header h1{
+        float:right;
+        margin: 0;
+        margin-top: 2.5%;
+		margin-right: 3%;
+		color: white;
+    }
+#logo {
+	width: 80px;
+	height: 80px;
+	left: 0;
+	padding-top: 15px;
+	padding-left:15px;
+	position: absolute;
+}
+#meni ul li {
+    display: inline;  
+}
+#meni {
+	padding-top: 90px;
+	margin-left: -1%;
+}
+#meni a {
+  font-size: 20px;
+  color: #c4cfab;
+  text-decoration:none;   
+  padding:15px;
+}
+#meni li a:hover {
+  color:white;
+}
+#meni_lista {
+	text-align:left;
+}
+#sredina{
+    margin:0;
+	min-height: 540px;
+}
+#side{
+	background-color:#ece7c5;
+	width:35%;
+	float:left; 
+	min-height:540px;
+}
+#naslov_side {
+	text-align: center;
+	font-weight:normal;
+}
+#forma_godina {
+	padding-left: 30px;
+	font-size: 16px;
+}
+.nazivi_polja {
+	padding-top: 10px;
+}
+input[type="text"] {
+    height: 20px;
+	width: 75%;
+}
+input[type="submit"]  {
+    height: 30px;
+	width: 130px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	margin-top: 50px;
+	border-spacing: 20px;
+}
+#dugme_unesi {
+	float: right;
+	margin-right: 25%;
+	position: relative;
+}
+#glavniSadrzaj{
+	background-color:#eee0b1;
+	width:65%;
+	float:left;
+	min-height:540px;
+	font-size: 14px;
+}
+.okvir {
+	display: flex;
+    flex-wrap: wrap;
+	margin-top: 50px;
+	margin-left: 30px;
+}
+.godina {
+	background-color: #c3b491;
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 150px;
+    padding: 20px;
+    margin: 5px;
+    max-width: 33.33%;
+	min-height: 100px;
+    background: #c3b491;
+}
+#greska {
+	font-size: 16px;
+	padding: 5px;
+	color: red;
+}
+#footer {
+	margin: 0;
+	background-color:#60664e;
+	overflow: hidden;
+	clear:both;
+	font-size: 16px;
+	max-height:48px; 
+}
+#footer p{
+	margin-left: 15px;
+	color: white;
+}
+
+@media only screen and (max-width:600px) {
+  #header {
+	  padding-bottom: 110px;
+  }
+  #header h1 {
+	  position: relative;
+	  float: left;
+	  left: 40px;
+	  top: 400px;
+  }
+  #meni ul li{
+	  display:block; 
+	  padding-top:10px;
+}
+	#side {
+		width:100%;
+		height:auto;
+		padding-right: 17%;
+	}
+    #glavniSadrzaj {
+		width:100%;
+		height:auto;
+		padding-right: 17%;
+	}
+	#footer {
+		margin-top: 50px;
+		height: 48px;
+	}
+}
+@media only screen and (max-device-width:600px) {
+  #header {
+	  padding-bottom: 110px;
+  }
+  #header h1 {
+	  position: relative;
+	  float: left;
+	  left: 40px;
+	  top: 400px;
+  }
+  #meni ul li{
+	  display:block; 
+	  padding-top:10px;
+}
+	#side {
+		width:100%;
+		height:auto;
+		padding-right: 15%;
+	}
+    #glavniSadrzaj {
+		width:100%;
+		height:auto;
+		padding-right: 15%;
+	}
+	#footer {
+		margin-top: 50px;
+		height: 48px;
+	}
+}

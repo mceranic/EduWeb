@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="addZadatakStil.css"> 
+	<script src = "validacijaAddZadatak.js"></script>
+  <script src = "validacija.js"></script>
+  <title>Spirala1</title>
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+       
+       <img id="logo" alt="logo" src="owl.png">
+	   
+	   <div id="naslov_div">
+	     <h1 id="naslov">Dodavanje zadatka</h1>
+	   </div>
+	   
+     <!--Meni-->
+	 <div id="meni">
+	            <ul id="meni_lista"> 
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="studenti.html">Pregled studenata</a></li>
+				  <li><a href="zadaci.html">Pregled zadataka</a></li>
+				  <li><a href="commiti.html">Pregled commita</a></li>
+				  <li><a href="addGodina.html">Dodavanje godine</a></li>
+                  <li><a href="addStudent.html">Dodavanje studenta</a></li>
+				  <li><a href="addVjezba.html">Dodavanje vježbe</a></li>			      	
+                  <li><a href="addZadatak.html">Dodavanje zadatka</a></li>			  
+                </ul>
+				</div>
+</div>
+
+<!--Glavni dio-->
+<div id="sredina">
+  <div id="glavniSadrzaj">
+		<div id="forma">
+			<h5 id="naslov_srednji">Novi zadatak</h5>
+			<form action="/addZadatak" method="post" enctype="multipart/form-data">
+				<p>Naziv zadatka</p>
+				<input id="naziv" type="text" name="naziv" required>
+				<p>Tekst postavke *</p>
+				<input id="fajl" type="file" name="postavka" required>
+				<input id="dugme_dodaj" onclick="buttonDodaj()" type="submit" name="submit" value="Dodaj">			
+			</form>
+			<div id="greska"></div>
+		</div>  
+	</div>	
+</div>
+
+<!--Footer-->
+<div id="footer">
+  <p>Web tehnologije 2018/19</p>
+</div>
+</body>
+</html>

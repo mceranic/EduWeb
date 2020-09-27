@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Spirala1</title>
+  <link rel="stylesheet" type="text/css" href="commitiStil.css"> 
+  <script src = "committabela.js"></script>
+  <script src = "validacijaCommit.js"></script>
+  <script src = "validacija.js"></script>
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+       
+       <img id="logo" alt="logo" src="owl.png">
+	   
+	   <div id="naslov_div">
+	     <h1 id="naslov">Pregled commita</h1>
+	   </div>
+	   
+     <!--Meni-->
+	 <div id="meni">
+	            <ul id="meni_lista"> 
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="studenti.html">Pregled studenata</a></li>
+				  <li><a href="zadaci.html">Pregled zadataka</a></li>
+				  <li><a href="commiti.html">Pregled commita</a></li>
+				  <li><a href="addGodina.html">Dodavanje godine</a></li>
+                  <li><a href="addStudent.html">Dodavanje studenta</a></li>
+				  <li><a href="addVjezba.html">Dodavanje vježbe</a></li>			      	
+                  <li><a href="addZadatak.html">Dodavanje zadatka</a></li>			  
+                </ul>
+				</div>
+</div>
+
+<!--Glavni dio-->
+<div id="sredina">
+<div id="tekst">
+  <p>Student: Neko Nekić, 1234</p>
+  <p>Naziv vježbe/spirale: Vježba 1</p>
+  <p>Repozitorij: <a href="login.html">Hyperlink</a>
+</div>
+<div id="forma">
+	<form action=# onsubmit="return false">
+    <p>Broj zadataka:</p>
+    <input id="brojZadataka" type="number" min="1" max="5" onfocusout="postaviZadatke()"></td>
+    <p>URL commit-a:</p>
+    <input id="url" type="text" name="urlCom">
+		<p>Broj zadatka koji ažurirate:</p>
+    <input id="brZadatka" type="number" min="1" max="5"></td>	
+    <p>Broj commita koji ažurirate:</p>
+    <input id="brCommita" type="number" min="1" max="5"></td>	
+    <div id="dugmad">
+        <input id="dugme_dodaj" onclick="buttonDodaj()" type="submit" name="submit" value="Dodaj">
+        <input id="dugme_edituj" onclick="buttonEdituj()" type="submit" name="submit" value="Edit">
+        <input id="dugme_obrisi" onclick="buttonObrisi()" type="submit" name="submit" value="Obriši">
+    </div>
+  </form>
+  </div>
+  <div id="greska"></div>
+<div id="commiti"></div>
+</div>
+<!--Footer-->
+<div id="footer">
+  <p>Web tehnologije 2018/19</p>
+</div>
+</body>
+</html>

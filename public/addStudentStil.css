@@ -1,0 +1,251 @@
+body {
+  background: #60664e;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-style: normal;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  text-align: right;
+  padding-top: 10px;
+}
+#header h1 {
+  float: right;
+  margin: 0;
+  margin-top: 2.5%;
+  margin-right: 3%;
+  color: white;
+}
+#logo {
+  width: 80px;
+  height: 80px;
+  left: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  position: absolute;
+}
+#meni ul li {
+  display: inline;
+}
+#meni {
+  padding-top: 90px;
+  margin-left: -1%;
+}
+#meni a {
+  font-size: 20px;
+  color: #c4cfab;
+  text-decoration: none;
+  padding: 15px;
+}
+#meni li a:hover {
+  color: white;
+}
+#meni_lista {
+  text-align: left;
+}
+#sredina {
+  background-color: #ece7c5;
+  margin: 0;
+  min-height: 1000px;
+}
+#glavniSadrzaj {
+  background-color: #c3b491;
+  width: 85%;
+  min-height: 750px;
+  position: relative;
+  margin: 0 auto;
+}
+.divovi {
+  background-color: #ece2c3;
+  width: 40%;
+  padding-top: 10px;
+  box-shadow: 5px 5px 2px #a49975;
+  top: 50%;
+  left: 50%;
+  transform: translate(70%, 10%);
+}
+#gornji_div {
+  min-height: 470px;
+}
+#donji_div {
+  min-height: 320px;
+  margin-top: 60px;
+}
+.naslov_formi {
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 0 20px;
+  margin: 0;
+  font-weight: normal;
+}
+#gornja_forma,
+#donja_forma {
+  padding-left: 30px;
+  font-size: 15px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+.select {
+  width: 50%;
+  height: 30px;
+}
+#fajl {
+  width: 90%;
+}
+input[type="text"],
+[type="number"],
+[type="email"] {
+  height: 20px;
+  width: 49%;
+}
+input[type="submit"] {
+  height: 30px;
+  width: 130px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  border-spacing: 20px;
+}
+#greska {
+  font-size: 16px;
+  padding: 5px;
+  color: red;
+}
+#gornji_unesi {
+  margin-top: 12%;
+  float: right;
+  margin-right: 10%;
+  position: relative;
+}
+#donji_unesi {
+  margin-top: 10%;
+  float: right;
+  margin-right: 10%;
+  position: relative;
+}
+#footer {
+  margin: 0;
+  background-color: #60664e;
+  overflow: hidden;
+  font-size: 16px;
+  clear: both;
+  max-height: 48px;
+}
+#footer p {
+  margin-left: 15px;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  #header {
+    padding-bottom: 115px;
+    text-align: left;
+  }
+  #header h1 {
+    position: relative;
+    float: left;
+    left: 40px;
+    top: 400px;
+  }
+  #meni ul li {
+    display: block;
+    padding-top: 10px;
+  }
+  #sredina {
+    width: 100%;
+    min-height: 1000px;
+  }
+  #glavniSadrzaj {
+    width: 100%;
+    min-height: 1000px;
+    padding-right: 5px;
+  }
+  #forma {
+    width: 70%;
+    height: auto;
+  }
+  #gornji_div {
+    height: 400px;
+  }
+  #donji_div {
+    height: 250px;
+  }
+  .divovi {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, 20%);
+  }
+  .naslov_formi {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-device-width: 600px) {
+  #header {
+    padding-bottom: 115px;
+    text-align: left;
+  }
+  #header h1 {
+    position: relative;
+    float: left;
+    left: 40px;
+    top: 400px;
+  }
+  #meni ul li {
+    display: block;
+    padding-top: 10px;
+  }
+  #sredina {
+    width: 100%;
+    min-height: 1000px;
+  }
+  #glavniSadrzaj {
+    width: 100%;
+    min-height: 1000px;
+    padding-right: 5px;
+  }
+  #forma {
+    width: 70%;
+    height: auto;
+  }
+  #gornji_div {
+    height: 400px;
+  }
+  #donji_div {
+    height: 250px;
+  }
+  .divovi {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, 20%);
+  }
+  .naslov_formi {
+    font-size: 16px;
+  }
+}
+
+#buttonUcitaj,
+#buttonUnesi {
+  margin: 20px;
+  width: 150px;
+  height: 50px;
+  background: #60664e;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+#buttonUnesi[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+#new_gornja_forma {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="addStudentStil.css" />
+    <title>Spirala1</title>
+    <script src="validacija.js"></script>
+    <script>
+      // globalne varijable gdje spremam odabir godine i listu studenata
+      // da bi im mogao pristupiti u drugim funkcijama
+      let SelectOptions = null;
+      let StudentList = null;
+
+      function postaviGodine() {
+        var ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function() {
+          if (ajax.readyState == 4 && ajax.status == 200) {
+            var rezultat = ajax.responseText; // godine.json
+            var godine = JSON.parse(rezultat); // pretvara tekst u js objekat
+            var god1 = document.getElementsByName("sGodine")[0];
+            SelectOptions = godine;
+            for (var i = 0; i < godine.length; i++) {
+              god1.add(new Option(String(godine[i].nazivGod)));
+            }
+          }
+        };
+        ajax.open("GET", "http://localhost:8080/godine", true);
+        ajax.setRequestHeader("Content-Type", "application/json");
+        ajax.send();
+      }
+    </script>
+  </head>
+
+  <body onload="postaviGodine()">
+    <!--Header-->
+    <div id="header">
+      <img id="logo" alt="logo" src="owl.png" />
+
+      <div id="naslov_div"><h1 id="naslov">Dodavanje studenata</h1></div>
+
+      <!--Meni-->
+      <div id="meni">
+        <ul id="meni_lista">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="studenti.html">Pregled studenata</a></li>
+          <li><a href="zadaci.html">Pregled zadataka</a></li>
+          <li><a href="commiti.html">Pregled commita</a></li>
+          <li><a href="addGodina.html">Dodavanje godine</a></li>
+          <li><a href="addStudent.html">Dodavanje studenta</a></li>
+          <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+          <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--Glavni dio-->
+    <div id="sredina">
+      <div id="glavniSadrzaj">
+        <!-- <div id="gornji_div" class="divovi">
+	  <h5 class="naslov_formi">Pojedinačni unos</h5>
+	  <form id="gornja_forma" name="fPojedinacni" action=# onsubmit="return false">
+	    <p>Godina</p>
+		    <select class="select" name="godina">
+          <option>2018/19</option>
+        </select >
+		<p>Ime i prezime</p>
+        <input type="text" id="ime" name="ime" required>
+		<p>Index</p>
+        <input type="number" id="index" name="index" required>
+		<p>Email</p>
+        <input type="email" name="email" required>
+	    <input id="gornji_unesi" onclick="buttonUnesi()" type="submit" name="submit" value="Unesi">
+		</form>
+		<div id="greska"></div>
+	</div>  
+	
+	<div id="donji_div" class="divovi">
+	  <h5 class="naslov_formi">Masovni unos</h5>
+	  <form id="donja_forma" name="fMasovni" action=# onsubmit="return false">
+	    <p>Godina</p>
+		<select class="select" name="godina">
+          <option>2018/19</option>
+        </select >
+		<p>CSV fajl</p>
+		<input id="fajl" type="file" name="csv lista">		
+	    <input id="donji_unesi" type="submit" name="submit" value="Unesi">
+	  </form>
+	</div> -->
+
+        <div id="gornji_div" class="divovi">
+          <h5 class="naslov_formi">Pojedinačni unos</h5>
+          <form
+            id="new_gornja_forma"
+            name="fPojedinacni"
+            action="#"
+            onsubmit="return false"
+          >
+            <p>Godina</p>
+            <select class="select" name="sGodine" id="sGodine"> </select>
+
+            <p>Key</p>
+            <input type="text" id="key" name="key" required />
+            <p>Secret</p>
+            <input type="text" id="secret" name="secret" required />
+
+            <button id="buttonUcitaj" value="Ucitaj">Ucitaj</button>
+
+            <button id="buttonUnesi" value="Unesi" disabled>Unesi</button>
+          </form>
+          <div id="greska"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer"><p>Web tehnologije 2018/19</p></div>
+
+    <script src="BitBucket.js"></script>
+    <script src="validacijaAddStudent.js"></script>
+  </body>
+</html>

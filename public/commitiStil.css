@@ -1,0 +1,155 @@
+body {
+	background: #60664e;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-style: normal;
+	position: relative;
+	width:100%;
+	margin:0 auto;
+}
+
+#header{
+    text-align: right;
+	padding-top:10px;
+}
+#header h1{
+        float:right;
+        margin: 0;
+        margin-top: 2.5%;
+		margin-right: 3%;
+		color: white;
+    }
+#logo {
+	width: 80px;
+	height: 80px;
+	left: 0;
+	padding-top: 15px;
+	padding-left:15px;
+	position: absolute;
+}
+#meni ul li {
+    display: inline;  
+}
+#meni {
+	padding-top: 90px;
+	margin-left: -1%;
+}
+#meni a {
+  font-size: 20px;
+  color: #c4cfab;
+  text-decoration:none;   
+  padding:15px;
+}
+#meni li a:hover {
+  color:white;
+}
+#meni_lista {
+	text-align:left;
+}
+#sredina{
+	background-color: #ece7c5;
+    margin:0;
+	min-height: 700px;
+}
+#tekst {
+	padding: 40px;
+	font-size: 17px;
+}
+#forma {
+	bottom: 40px;	
+	width: 40%;
+	height: 60%;
+	font-size: 17px;
+	padding-left: 40px;
+	position: relative;
+}
+input[type="number"] {
+    height: 16px;
+	width: 160px;
+}
+input[type="submit"] {
+    height: 30px;
+	width: 100px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	border-spacing: 20px;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+#dugmad { 
+	position: relative;
+    margin-top: 20px;
+}
+#tabela {
+	width: 60%;
+	text-align: center;
+	margin-left: 40px;
+}
+#greska {
+	font-size: 16px;
+	padding: 5px;
+	color: red;
+}
+#commiti {
+	padding: 5px;
+}
+#tabela, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+#sredina th {
+	background-color:#c3b491;
+}
+#sredina td {
+	background-color: white;
+}
+#footer {
+	margin: 0;
+	background-color:#60664e;
+	overflow: hidden;
+	font-size: 16px;
+	clear: both;
+	max-height: 48px;
+}
+#footer p{
+	margin-left: 15px;
+	color: white;
+}
+
+@media only screen and (max-width:600px) {
+  #header {
+	  padding-bottom: 110px;
+  }
+  #header h1 {
+	  position: relative;
+	  float: left;
+	  left: 40px;
+	  top: 400px;
+  }
+  #meni ul li{
+	  display:block; 
+	  padding-top:10px;
+}
+  #sredina {	  
+		width:100%;
+		height:auto;
+	}
+}
+@media only screen and (max-device-width:600px) {
+  #header {
+	  padding-bottom: 110px;
+  }
+  #header h1 {
+	  position: relative;
+	  float: left;
+	  left: 40px;
+	  top: 400px;
+  }
+  #meni ul li{
+	  display:block; 
+	  padding-top:10px;
+}
+	#sredina {
+		width:100%;
+		height:auto;
+	}
+}

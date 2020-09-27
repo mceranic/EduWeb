@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="loginStil.css"> 
+  <script src = "validacijaLogin.js"></script>
+  <script src = "validacija.js"></script>
+  <title>Spirala1</title>
+</head>
+
+<body>
+  <div id="login">
+    <form id="forma" action=# onsubmit="return false">
+        <table>
+            <tr>
+            <td><label>Username</label>
+              <td><input id="ime" type="text" name="username">
+          <tr>
+            <td><label>Password</label>
+            <td><input id="password" type="password" name="password">
+          <tr>
+          <td colspan="2">
+              <p><input id="submitLogin" onclick="buttonLogin()" type="button" name="login" value="Login"></p>
+        </table>
+    </form>
+  </div>
+  <div id="greska"></div>
+</body>
+</html>

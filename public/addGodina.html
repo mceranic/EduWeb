@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="addGodinaStil.css"> 
+	<script type="text/javascript" src = "validacijaAddGodina.js"></script>
+	<script type="text/javascript" src = "validacija.js"></script>
+	<script type="text/javascript" src = "GodineAjax.js"></script>
+  <title>Spirala1</title>
+</head>
+
+<body onload="ucitajGodine()">
+<!--Header-->
+<div id="header">
+       
+       <img id="logo" alt="logo" src="owl.png">
+	   
+	   <div id="naslov_div">
+	     <h1 id="naslov">Dodavanje godine</h1>
+	   </div>
+	   
+     <!--Meni-->
+	 <div id="meni">
+	            <ul id="meni_lista"> 
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="studenti.html">Pregled studenata</a></li>
+				  <li><a href="zadaci.html">Pregled zadataka</a></li>
+				  <li><a href="commiti.html">Pregled commita</a></li>
+				  <li><a href="addGodina.html">Dodavanje godine</a></li>
+                  <li><a href="addStudent.html">Dodavanje studenta</a></li>
+				  <li><a href="addVjezba.html">Dodavanje vježbe</a></li>			      	
+                  <li><a href="addZadatak.html">Dodavanje zadatka</a></li>			  
+                </ul>
+				</div>
+</div>
+
+<!--Glavni dio-->
+<div id="sredina">
+  <div id="side">
+    <h4 id="naslov_side">Unos godine:</h4>
+	<form id="forma_godina" name="fGodina" action="/addGodina" method="POST" enctype='application/x-www-form-urlencoded'>
+	    <p class="nazivi_polja">Naziv godine</p>
+		<input id="nazivGod" type="text" name="nazivGod" required>
+		<p class="nazivi_polja">Nazivi repozitorija vježbe</p>
+        <input id="nazivRepVje" type="text" name="nazivRepVje" required>
+		<p class="nazivi_polja">Nazivi repozitorija spirale</p>
+        <input id="nazivRepSpi" type="text" name="nazivRepSpi" required>
+		<input type="submit" onclick="buttonPonisti()" name="submit" value="Poništi">
+	    <input id="dugme_unesi" onclick="buttonUnesi()" type="submit" name="submit" value="Unesi">
+		</form>
+		<div id="greska"></div>
+  </div>
+
+  <div id="glavniSadrzaj">
+    <div id="okvir">
+	 </div>
+	</div>	
+</div>
+<!--Footer-->
+<div id="footer">
+  <p>Web tehnologije 2018/19</p>
+</div>
+</body>
+</html>

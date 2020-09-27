@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="addVjezbaStil.css" />
+    <script src="validacijaAddVjezba.js"></script>
+    <script src="validacija.js"></script>
+    <script src="VezaAjax.js"></script>
+    <title>Spirala1</title>
+  </head>
+
+  <body onload="ucitajGodineVjezbe()">
+    <!--Header-->
+    <div id="header">
+      <img id="logo" alt="logo" src="owl.png" />
+
+      <div id="naslov_div"><h1 id="naslov">Dodavanje vježbe/spirale</h1></div>
+
+      <!--Meni-->
+      <div id="meni">
+        <ul id="meni_lista">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="studenti.html">Pregled studenata</a></li>
+          <li><a href="zadaci.html">Pregled zadataka</a></li>
+          <li><a href="commiti.html">Pregled commita</a></li>
+          <li><a href="addGodina.html">Dodavanje godine</a></li>
+          <li><a href="addStudent.html">Dodavanje studenta</a></li>
+          <li><a href="addVjezba.html">Dodavanje vježbe</a></li>
+          <li><a href="addZadatak.html">Dodavanje zadatka</a></li>
+        </ul>
+      </div>
+    </div>
+
+<!--Glavni dio-->
+<div id="sredina">
+  <div id="glavniSadrzaj">
+	<div id="gornji_div" class="divovi">
+	  <h5 class="naslov_formi">Dodavanje postojeće vježbe/spirale</h5>
+	  <form id="gornja_forma" name="fPostojeca" action="/addVjezba" method="post">
+	    <p>Godina</p>
+	    	<select class="select" name="sGodine">
+        </select >
+		   <p>Vježbe/Spirale</p>
+        <select class="select" name="sVjezbe">
+        </select >
+	    <input id="gornji_dodaj" type="submit" name="submit" value="Dodaj">
+	  </form>
+	</div>  
+	
+	<div id="donji_div" class="divovi">
+	  <h5 class="naslov_formi">Nova vježba/spirala</h5>
+	  <form id="donja_forma" name="fNova" action="/addVjezba" method="post">
+	    <p>Naziv vježbe</p>
+		<input type="text" id="naziv" name="naziv_vjezbe">
+		<p>Godina</p>
+		    <select class="select" name="sGodine" id="sGodine">
+        </select>		
+		<div><input id="checkbox_spirala" type="checkbox" name="spirala">
+		  <label for="checkbox_spirala">Spirala</label>
+		</div>
+	    <input id="donji_dodaj" onclick="buttonDodaj()" type="submit" name="submit" value="Dodaj">
+		</form>		
+		<div id="greska"></div>
+	</div>
+  <div class="divovi" id="zadnji_div">
+		<form id="zadnja_forma" name="fPoveziZadatak" action="/addVjezba" method="post">
+			<p>Vježbe</p>
+        <select class="select" name="sVjezbe">
+				</select >
+				<p>Zadaci</p>
+			<select class="select" name="sZadatak">
+			</select >
+			<input type="button" name="dZadatak" value="Dodaj zadatak">
+		</form>
+	</div>	
+  </div>
+</div>
+
+    <!--Footer-->
+    <div id="footer"><p>Web tehnologije 2018/19</p></div>
+  </body>
+</html>

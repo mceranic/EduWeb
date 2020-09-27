@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="zadaciStil.css"> 
+  <script src = "validacijaZadaci.js"></script>
+  <script src = "validacija.js"></script>
+  <title>Spirala1</title>
+</head>
+
+<body>
+<!--Header-->
+<div id="header">
+       
+       <img id="logo" alt="logo" src="owl.png">
+	   
+	   <div id="naslov_div">
+	     <h1 id="naslov">Odabir vježbe</h1>
+	   </div>
+	  
+     <!--Meni-->
+	 <div id="meni">
+	            <ul id="meni_lista"> 
+                  <li><a href="login.html">Login</a></li>
+                  <li><a href="studenti.html">Pregled studenata</a></li>
+				  <li><a href="zadaci.html">Pregled zadataka</a></li>
+				  <li><a href="commiti.html">Pregled commita</a></li>
+				  <li><a href="addGodina.html">Dodavanje godine</a></li>
+                  <li><a href="addStudent.html">Dodavanje studenta</a></li>
+				  <li><a href="addVjezba.html">Dodavanje vježbe</a></li>			      	
+                  <li><a href="addZadatak.html">Dodavanje zadatka</a></li>			  
+                </ul>
+				</div>
+</div>
+
+<!--Glavni dio-->
+<div id="sredina">
+  <div id="prvi_dio" class="cetvrtina">
+    <p>Godina</p>
+	<div id="godina">
+	  <ul> 
+        <li>Godina 2014/15</li>
+        <li>Godina 2015/16</li>
+        <li>Godina 2016/17</li>
+        <li>Godina 2017/18</li>	
+        <li>Godina 2018/19</li>
+        <li>Godina 2018/19</li>
+        <li>Godina 2018/19</li>
+        <li>Godina 2018/19</li> 
+      </ul>
+	</div>
+  </div>
+  
+  <div id="srednji_dio" class="cetvrtina"> 
+    <p>Student</p>
+	<div id="neki">
+    <table id="forma">
+      <tr>
+        <td><input id = "ime" type="text" name="query">
+	  <tr>
+	  <td><p><input id="dugme" onclick="buttonSearch()" type="submit" name="search" value="Search"></p>
+	</table>
+	</div>
+    <div id="imena">
+	  <ul> 
+        <li>Ime i prezime | index</li>
+        <li>Neko Nekić | 12345</li>
+        <li>Neko Nekić | 12345</li>
+        <li>Neko Nekić | 12345</li>	
+        <li>Neko Nekić | 12345</li>
+        <li>Neko Nekić | 12345</li>  
+      </ul>
+  </div>
+  <div id="greska"></div>
+  </div>
+  <div id="zadnji_dio" class="polovina folderi">
+    <div class="folder">
+	 <p class="naslov_foldera">Vježbe</p>
+      <div class="item_vanjski">	 
+       <div class="item">Vježba 1</div>
+	   <div class="item">Vježba 2</div>
+	   <div class="item">Vježba 3</div>
+	   <div class="item">Vježba 4</div>
+	   <div class="item">Vježba 5</div>
+	   <div class="item">Vježba 6</div>
+    </div>
+	</div>
+	
+	<div id="donji_folder" class="folder">
+	  <p class="naslov_foldera">Spirale</p>
+	  <div class="item_vanjski">
+       <div class="item">Spirala 1</div>
+	   <div class="item">Spirala 2</div>
+	   <div class="item">Spirala 3</div>
+	   <div class="item">Spirala 4</div>	
+      </div>	   
+  </div>  
+  </div>  
+</div>
+
+<!--Footer-->
+<div id="footer">
+  <p>Web tehnologije 2018/19</p>
+</div>
+</body>
+</html>
